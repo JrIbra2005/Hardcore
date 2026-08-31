@@ -1,0 +1,14 @@
+{
+  "name": "mc-panel",
+  "version": "1.0.0",
+  "description": "Panel web para iniciar y detener un servidor de Minecraft alojado en tu PC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

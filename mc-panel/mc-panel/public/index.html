@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel del servidor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14151a;
+    --panel: #1c1f26;
+    --panel-2: #21252d;
+    --border: #33373f;
+    --text: #e9e7de;
+    --text-dim: #8e9099;
+    --green: #7ec850;
+    --amber: #d9a441;
+    --red: #c8594f;
+    --grey: #5c5f68;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .block {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background: var(--grey);
+    box-shadow:
+      inset -4px -4px 0 rgba(0,0,0,0.25),
+      inset 4px 4px 0 rgba(255,255,255,0.08);
+    transition: background 0.4s ease;
+    flex-shrink: 0;
+  }
+  .block.running { background: var(--green); }
+  .block.starting, .block.stopping { background: var(--amber); }
+  .block.stopped { background: var(--red); }
+  .block.offline { background: var(--grey); }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 24px;
+  }
+
+  .status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  .status-label {
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  .status-value {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .status-value.running { color: var(--green); }
+  .status-value.starting, .status-value.stopping { color: var(--amber); }
+  .status-value.stopped { color: var(--red); }
+  .status-value.offline { color: var(--grey); }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: filter 0.15s ease, transform 0.1s ease;
+  }
+  button:active { transform: scale(0.99); }
+  button:disabled { cursor: not-allowed; opacity: 0.55; }
+
+  button.start { background: var(--green); color: #0f1310; }
+  button.stop { background: var(--red); color: #1a0f0d; }
+  button.wait { background: var(--panel-2); color: var(--text-dim); border: 1px solid var(--border); }
+  button:not(:disabled):hover { filter: brightness(1.08); }
+
+  .console {
+    margin-top: 20px;
+  }
+
+  .console-label {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+
+  .log {
+    background: #0e0f13;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 12px 14px;
+    height: 260px;
+    overflow-y: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #b8bcc4;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .log:empty::before {
+    content: 'Sin actividad todavía.';
+    color: var(--text-dim);
+  }
+
+  .error-banner {
+    display: none;
+    background: rgba(200, 89, 79, 0.12);
+    border: 1px solid rgba(200, 89, 79, 0.4);
+    color: #e39a93;
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+  }
+
+  footer {
+    margin-top: 20px;
+    color: var(--text-dim);
+    font-size: 12.5px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="block offline" id="statusBlock"></div>
+    <div>
+      <h1>Panel del servidor</h1>
+      <div class="subtitle">Iniciar y detener el mundo compartido</div>
+    </div>
+  </header>
+
+  <div class="card">
+    <div class="error-banner" id="errorBanner"></div>
+
+    <div class="status-row">
+      <span class="status-label">Estado</span>
+      <span class="status-value offline" id="statusText">Consultando...</span>
+    </div>
+
+    <button id="actionBtn" class="wait" disabled>Consultando...</button>
+
+    <div class="console">
+      <div class="console-label">Consola</div>
+      <div class="log" id="log"></div>
+    </div>
+  </div>
+
+  <footer>Solo visible dentro de tu red Hamachi</footer>
+</main>
+
+<script>
+  const statusBlock = document.getElementById('statusBlock');
+  const statusText = document.getElementById('statusText');
+  const actionBtn = document.getElementById('actionBtn');
+  const logEl = document.getElementById('log');
+  const errorBanner = document.getElementById('errorBanner');
+
+  const LABELS = {
+    stopped: 'Apagado',
+    starting: 'Iniciando...',
+    running: 'En línea',
+    stopping: 'Deteniendo...',
+    offline: 'Sin conexión con el panel',
+  };
+
+  let currentState = 'offline';
+  let busy = false;
+
+  function render() {
+    statusBlock.className = 'block ' + currentState;
+    statusText.className = 'status-value ' + currentState;
+    statusText.textContent = LABELS[currentState] || currentState;
+
+    actionBtn.disabled = busy || currentState === 'starting' || currentState === 'stopping' || currentState === 'offline';
+
+    if (currentState === 'starting' || currentState === 'stopping') {
+      actionBtn.className = 'wait';
+      actionBtn.textContent = LABELS[currentState];
+    } else if (currentState === 'running') {
+      actionBtn.className = 'stop';
+      actionBtn.textContent = 'Detener servidor';
+    } else if (currentState === 'offline') {
+      actionBtn.className = 'wait';
+      actionBtn.textContent = 'Sin conexión con el panel';
+    } else {
+      actionBtn.className = 'start';
+      actionBtn.textContent = 'Iniciar servidor';
+    }
+  }
+
+  async function poll() {
+    try {
+      const res = await fetch('/api/status');
+      const data = await res.json();
+      currentState = data.state;
+      logEl.textContent = data.log || '';
+      logEl.scrollTop = logEl.scrollHeight;
+      errorBanner.style.display = 'none';
+    } catch (e) {
+      currentState = 'offline';
+    }
+    render();
+  }
+
+  actionBtn.addEventListener('click', async () => {
+    const endpoint = currentState === 'running' ? '/api/stop' : '/api/start';
+    busy = true;
+    render();
+    try {
+      const res = await fetch(endpoint, { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) {
+        errorBanner.textContent = data.error || 'Ocurrió un error.';
+        errorBanner.style.display = 'block';
+      }
+    } catch (e) {
+      errorBanner.textContent = 'No se pudo contactar al panel.';
+      errorBanner.style.display = 'block';
+    }
+    busy = false;
+    await poll();
+  });
+
+  poll();
+  setInterval(poll, 3000);
+</script>
+</body>
+</html>

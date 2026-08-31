@@ -1,0 +1,155 @@
+[21:24:23] [ServerMain/INFO]: [bootstrap] Running Java 26 (Java HotSpot(TM) 64-Bit Server VM 26.0.2.1+1-7; Oracle Corporation null) on Windows 11 10.0 (amd64)
+[21:24:23] [ServerMain/INFO]: [bootstrap] Loading Paper 26.2-121-main@a2a42c5 (2026-08-29T11:32:25Z) for Minecraft 26.2
+[21:24:23] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[21:24:23] [ServerMain/INFO]: [PluginInitializerManager] Initialized 2 plugins
+[21:24:23] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (2):
+ - Fahare (1.4.0), Skript (2.16.1)
+[21:24:26] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[21:24:26] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[21:24:26] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 382,0ms
+[21:24:27] [ServerMain/INFO]: Loaded 1585 recipes
+[21:24:27] [ServerMain/INFO]: Loaded 1688 advancements
+[21:24:28] [Server thread/INFO]: Starting minecraft server version 26.2
+[21:24:28] [Server thread/INFO]: Loading properties
+[21:24:28] [Server thread/INFO]: This server is running Paper version 26.2-121-main@a2a42c5 (2026-08-29T11:32:25Z) (Implementing API version 26.2.build.121-stable)
+[21:24:28] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[21:24:28] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:24:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:24:28] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[21:24:28] [Server thread/INFO]: Default game type: SURVIVAL
+[21:24:28] [Server thread/INFO]: Generating keypair
+[21:24:28] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:24:28] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[21:24:28] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[21:24:28] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.16.1
+[21:24:28] [Server thread/INFO]: [Fahare] Loading server plugin Fahare v1.4.0
+[21:24:28] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:24:28] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:24:28] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:24:28] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:24:28] [Server thread/INFO]: Preparing level "world"
+[21:24:29] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[21:24:29] [Server thread/INFO]: Preparing spawn area: 100%
+[21:24:29] [Server thread/INFO]: Prepared spawn area in 2 ms
+[21:24:29] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[21:24:29] [Server thread/INFO]: Prepared spawn area in 1 ms
+[21:24:29] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[21:24:29] [Server thread/INFO]: Prepared spawn area in 1 ms
+[21:24:29] [Server thread/INFO]: Done preparing level "world" (0.387s)
+[21:24:29] [Server thread/INFO]: [Skript] Enabling Skript v2.16.1
+[21:24:29] [ForkJoinPool.commonPool-worker-7/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[21:24:30] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[21:24:30] [Server thread/INFO]: [Fahare] Enabling Fahare v1.4.0
+[21:24:30] [Server thread/INFO]: [Fahare] fhr.log.info.missing-seed
+[21:24:30] [Server thread/WARN]: [Fahare] fhr.log.info.difficulty
+[21:24:30] [Server thread/INFO]: Loading 0 persistent chunks for level 'fahare:limbo'...
+[21:24:30] [Server thread/INFO]: Prepared spawn area in 0 ms
+[21:24:30] [Server thread/INFO]: [Fahare] Initial seed for fake overworld is 8197791906644392102
+[21:24:31] [Server thread/INFO]: Loading 0 persistent chunks for level 'fahare:overworld'...
+[21:24:31] [Server thread/INFO]: Prepared spawn area in 1 ms
+[21:24:31] [Server thread/INFO]: [spark] Starting background profiler...
+[21:24:31] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[21:24:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:24:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:24:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21:24:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/fahare:limbo
+[21:24:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/fahare:overworld
+[21:24:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:24:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:24:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:24:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (limbo): All chunks are saved
+[21:24:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:24:31] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:24:31] [Server thread/INFO]: Running delayed init tasks
+[21:24:31] [ForkJoinPool.commonPool-worker-7/INFO]: [Skript] Loaded 5750 aliases in 837ms
+[21:24:31] [Server thread/INFO]: [Skript] Loading variables...
+[21:24:31] [Server thread/INFO]: [Skript] Loaded 0 variables in 0.0 seconds
+[21:24:31] [Server thread/INFO]: The difficulty did not change; it is already set to Hard
+[21:24:31] [Server thread/INFO]: An objective already exists by that name
+[21:24:31] [Server thread/INFO]: Nothing changed. That display slot is already showing that objective
+[21:24:31] [Server thread/WARN]: org.bukkit.command.CommandException: Unhandled exception executing 'scoreboard objectives modify HP render_type hearts' in org.bukkit.craftbukkit.command.VanillaCommandWrapper(scoreboard)
+[21:24:31] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.dispatchCommand(CraftServer.java:945)
+[21:24:31] [Server thread/WARN]: 	at org.bukkit.Bukkit.dispatchCommand(Bukkit.java:1106)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.Skript.dispatchCommand(Skript.java:1828)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.effects.EffCommand.execute(EffCommand.java:82)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.lang.Effect.run(Effect.java:42)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.lang.TriggerItem.walk(TriggerItem.java:40)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.lang.TriggerItem.walk(TriggerItem.java:67)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.lang.Trigger.execute(Trigger.java:33)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.events.EvtScript.runTrigger(EvtScript.java:70)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.events.EvtScript.postLoad(EvtScript.java:43)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.structures.StructEvent.postLoad(StructEvent.java:111)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.ScriptLoader.lambda$loadScripts$8(ScriptLoader.java:623)
+[21:24:31] [Server thread/WARN]: 	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1771)
+[21:24:31] [Server thread/WARN]: 	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1759)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.ScriptLoader.lambda$loadScripts$2(ScriptLoader.java:614)
+[21:24:31] [Server thread/WARN]: 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:705)
+[21:24:31] [Server thread/WARN]: 	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:683)
+[21:24:31] [Server thread/WARN]: 	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2227)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.ScriptLoader.loadScripts(ScriptLoader.java:541)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.ScriptLoader.loadScripts(ScriptLoader.java:484)
+[21:24:31] [Server thread/WARN]: 	at Skript-2.16.1.jar//ch.njol.skript.Skript$2.run(Skript.java:715)
+[21:24:31] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78)
+[21:24:31] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:474)
+[21:24:31] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1280)
+[21:24:31] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:303)
+[21:24:31] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1516)
+[21:24:31] [Server thread/WARN]: Caused by: com.mojang.brigadier.exceptions.CommandSyntaxException: Incorrect argument for command at position 32: ...modify HP <--[HERE]
+[21:24:31] [Server thread/INFO]: [Skript] All scripts loaded without errors.
+[21:24:31] [Server thread/INFO]: [Skript] Loaded 1 script with a total of 1 structure in 0.09 seconds
+[21:24:31] [Server thread/INFO]: [Skript] Finished loading.
+[21:24:31] [Server thread/INFO]: Done (8.975s)! For help, type "help"
+[21:24:33] [User Authenticator #0/INFO]: UUID of player Fenix_12 is 6118540d-c420-380a-8958-a858c4e3aac0
+[21:24:34] [Server thread/INFO]: Fenix_12 joined the game
+[21:24:34] [Server thread/INFO]: Fenix_12[/25.25.213.130:63366] logged in with entity id 58 at ([fahare:overworld]-51.42751929494304, -6.0, -69.30000001192093)
+[21:24:45] [User Authenticator #1/INFO]: UUID of player Pyrocrafter is 589b2520-6b67-3ee3-9351-fe15b09d668a
+[21:24:45] [Server thread/INFO]: Pyrocrafter joined the game
+[21:24:45] [Server thread/INFO]: Pyrocrafter[/25.27.174.47:63796] logged in with entity id 235 at ([fahare:overworld]-4.699999988079071, 53.0, -56.30000001192093)
+[21:26:04] [User Authenticator #2/INFO]: UUID of player El_ibra_2k5 is fc9ff75f-1edd-3cb1-bf27-4c941e82bf5a
+[21:26:05] [Server thread/INFO]: El_ibra_2k5 joined the game
+[21:26:05] [Server thread/INFO]: El_ibra_2k5[/25.39.17.201:50752] logged in with entity id 424 at ([fahare:overworld]-4.699999988079071, 56.0, -56.43822485580959)
+[21:27:19] [Server thread/INFO]: Fenix_12 has made the advancement [Sweet Dreams]
+[21:34:01] [Server thread/INFO]: Fenix_12 has made the advancement [Hot Stuff]
+[21:42:39] [Server thread/INFO]: Pyrocrafter has made the advancement [Sweet Dreams]
+[21:42:43] [Server thread/INFO]: El_ibra_2k5 has made the advancement [Sweet Dreams]
+[21:46:39] [Server thread/INFO]: El_ibra_2k5 has made the advancement [We Need to Go Deeper]
+[21:47:37] [Server thread/INFO]: El_ibra_2k5 was slain by Enderman
+[21:47:37] [Server thread/INFO]: [Fahare] Seed for world_nether is 8156393662922322945
+[21:47:37] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
+[21:47:37] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
+[21:47:37] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
+[21:47:37] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
+[21:47:37] [Server thread/INFO]: [Fahare] Deleting folder .\world\dimensions\minecraft\the_nether
+[21:47:37] [Server thread/INFO]: Selecting spawn point for level 'minecraft:the_nether'...
+[21:47:37] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[21:47:37] [Server thread/INFO]: Preparing spawn area: 100%
+[21:47:37] [Server thread/INFO]: Prepared spawn area in 110 ms
+[21:47:37] [Server thread/INFO]: Regenerated world_nether
+[21:47:38] [Server thread/INFO]: [Fahare] Seed for world_the_end is -6927823289533429713
+[21:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
+[21:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
+[21:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
+[21:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
+[21:47:38] [Server thread/INFO]: [Fahare] Deleting folder .\world\dimensions\minecraft\the_end
+[21:47:38] [Server thread/INFO]: Selecting spawn point for level 'minecraft:the_end'...
+[21:47:38] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[21:47:38] [Server thread/INFO]: Preparing spawn area: 100%
+[21:47:38] [Server thread/INFO]: Prepared spawn area in 122 ms
+[21:47:38] [Server thread/INFO]: Regenerated world_the_end
+[21:47:38] [Server thread/INFO]: [Fahare] Seed for fahare_overworld is -5782289195670663378
+[21:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'fahare:overworld'
+[21:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'fahare:overworld'
+[21:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'fahare:overworld'
+[21:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'fahare:overworld'
+[21:47:38] [Server thread/INFO]: [Fahare] Deleting folder .\world\dimensions\fahare\overworld
+[21:47:38] [Server thread/INFO]: Selecting spawn point for level 'fahare:overworld'...
+[21:47:39] [Server thread/INFO]: Loading 0 persistent chunks for level 'fahare:overworld'...
+[21:47:39] [Server thread/INFO]: Preparing spawn area: 100%
+[21:47:39] [Server thread/INFO]: Prepared spawn area in 1176 ms
+[21:47:39] [Server thread/INFO]: Regenerated fahare_overworld
+[21:48:56] [Server thread/INFO]: El_ibra_2k5 lost connection: Disconnected
+[21:48:56] [Server thread/INFO]: El_ibra_2k5 left the game
+[21:48:58] [Server thread/INFO]: Fenix_12 lost connection: Disconnected
+[21:48:58] [Server thread/INFO]: Fenix_12 left the game
+[21:48:59] [Server thread/INFO]: Pyrocrafter lost connection: Disconnected
+[21:48:59] [Server thread/INFO]: Pyrocrafter left the game

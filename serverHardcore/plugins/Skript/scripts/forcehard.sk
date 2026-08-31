@@ -1,0 +1,17 @@
+# ==========================================
+# FORCE HARD + HEALTH SCOREBOARD
+# Skript 2.16.1
+# ==========================================
+
+on load:
+    # 1. Force Difficulty to Hard
+    execute console command "difficulty hard"
+
+    # 2. Create Health Scoreboard
+    execute console command "scoreboard objectives add HP health"
+
+    # 3. Set scoreboard to display in TAB
+    execute console command "scoreboard objectives setdisplay list HP"
+
+    # 4. Display health as hearts
+    execute console command "scoreboard objectives modify HP render_type hearts"

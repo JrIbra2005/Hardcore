@@ -1,0 +1,52 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 6798,
+      "minecraft:walk_one_cm": 11951,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:walk_under_water_one_cm": 220,
+      "minecraft:damage_taken": 418,
+      "minecraft:damage_dealt": 165,
+      "minecraft:play_time": 6798,
+      "minecraft:jump": 158,
+      "minecraft:time_since_death": 6798,
+      "minecraft:drop": 4,
+      "minecraft:sprint_one_cm": 15848,
+      "minecraft:fall_one_cm": 6029,
+      "minecraft:swim_one_cm": 5958,
+      "minecraft:total_world_time": 6798,
+      "minecraft:fly_one_cm": 28741,
+      "minecraft:walk_on_water_one_cm": 2281,
+      "minecraft:crouch_one_cm": 133,
+      "minecraft:sneak_time": 390,
+      "minecraft:player_kills": 1
+    },
+    "minecraft:used": {
+      "minecraft:sand": 3,
+      "minecraft:dirt": 1,
+      "minecraft:birch_log": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:wildflowers": 4
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 1,
+      "minecraft:spruce_sapling": 1,
+      "minecraft:sand": 6,
+      "minecraft:birch_log": 1,
+      "minecraft:wildflowers": 4
+    },
+    "minecraft:killed": {
+      "minecraft:bee": 1
+    },
+    "minecraft:mined": {
+      "minecraft:wildflowers": 1,
+      "minecraft:sand": 6,
+      "minecraft:birch_log": 1,
+      "minecraft:grass_block": 1,
+      "minecraft:spruce_leaves": 7
+    }
+  },
+  "DataVersion": 4903
+}

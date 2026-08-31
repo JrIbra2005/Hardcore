@@ -1,0 +1,64 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:sand": 6,
+      "minecraft:dirt": 4
+    },
+    "minecraft:dropped": {
+      "minecraft:brown_mushroom": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 7138,
+      "minecraft:walk_one_cm": 13742,
+      "minecraft:leave_game": 4,
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_taken": 2028,
+      "minecraft:walk_under_water_one_cm": 8701,
+      "minecraft:damage_dealt": 186,
+      "minecraft:play_time": 19825,
+      "minecraft:jump": 321,
+      "minecraft:time_since_death": 7138,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 27177,
+      "minecraft:fall_one_cm": 23732,
+      "minecraft:swim_one_cm": 25186,
+      "minecraft:total_world_time": 19825,
+      "minecraft:fly_one_cm": 73898,
+      "minecraft:walk_on_water_one_cm": 3829,
+      "minecraft:crouch_one_cm": 233,
+      "minecraft:sneak_time": 294,
+      "minecraft:climb_one_cm": 3553,
+      "minecraft:deaths": 8
+    },
+    "minecraft:picked_up": {
+      "minecraft:brown_mushroom": 1,
+      "minecraft:salmon": 1,
+      "minecraft:dirt": 4,
+      "minecraft:melon_slice": 4,
+      "minecraft:sand": 6
+    },
+    "minecraft:mined": {
+      "minecraft:melon": 1,
+      "minecraft:tall_seagrass": 1,
+      "minecraft:dirt": 2,
+      "minecraft:vine": 1,
+      "minecraft:birch_leaves": 3,
+      "minecraft:grass_block": 2,
+      "minecraft:spruce_leaves": 4,
+      "minecraft:ice": 1,
+      "minecraft:short_grass": 5,
+      "minecraft:bee_nest": 1,
+      "minecraft:brown_mushroom": 1,
+      "minecraft:fern": 1,
+      "minecraft:sand": 6,
+      "minecraft:large_fern": 1
+    },
+    "minecraft:killed_by": {
+      "minecraft:player": 1
+    },
+    "minecraft:killed": {
+      "minecraft:salmon": 1
+    }
+  },
+  "DataVersion": 4903
+}
